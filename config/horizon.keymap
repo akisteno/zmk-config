@@ -23,28 +23,28 @@
 
         default_layer {
             bindings = <
-                &kp TAB   &kp Q    &kp W &kp E &kp R   &kp T                         &kp Y         &kp U    &kp I     &kp O   &kp P     &kp MINUS
-                &kp LSHFT &kp A    &kp S &kp D &kp F   &kp G                         &kp H         &kp J    &kp K     &kp L   &kp SEMI  &kp SQT
-                &kp LCTRL &kp Z    &kp X &kp C &kp V   &kp B       &none   &none     &kp N         &kp M    &kp COMMA &kp DOT &kp SLASH &kp RCTRL
-                &kp LALT  &kp LGUI &none &none &kp DEL &lt SYM TAB &kp ESC &kp ENTER &lt FUN SPACE &kp BSPC &none     &none   &kp RGUI  &kp RALT
+                &kp TAB   &kp Q    &kp W    &kp E &kp R   &kp T                          &kp Y         &kp U    &kp I     &kp O       &kp P     &lt SYM N0
+                &kp CAPS  &kp A    &kp S    &kp D &kp F   &kp G                          &kp H         &kp J    &kp K     &kp L       &kp SEMI  &kp SQT
+                &kp LSHFT &kp Z    &kp X    &kp C &kp V   &kp B       &kp INT5 &kp INT4  &kp N         &kp M    &kp COMMA &kp DOT     &kp SLASH &kp RSHFT
+                &kp LCTRL &kp LWIN &kp LALT &kp Z &kp DEL &lt SYM TAB &kp ESC  &kp ENTER &lt FUN SPACE &kp BSPC &kp RWIN  &kp K_CMENU &kp RALT  &kp RCTRL
             >;
         };
 
         symbol_layer {
             bindings = <
-                &kp COLON &kp N1   &kp N2   &kp N3   &kp N4   &kp N5                  &kp N6    &kp N7    &kp N8   &kp N9   &kp DQT   &kp UNDER
-                &kp HASH  &kp EXCL &kp LPAR &kp RPAR &kp DLLR &kp AMPS                &kp PIPE  &kp EQUAL &kp LBRC &kp RBRC &kp N0    &kp GRAVE
-                &kp TILDE &kp AT   &kp LBKT &kp RBKT &kp PLUS &kp PRCNT &trans &trans &kp CARET &kp ASTRK &kp LT   &kp GT   &kp QMARK &kp BSLH
-                &trans    &trans   &trans   &trans   &trans   &trans    &trans &trans &kp SPACE &trans    &trans   &trans   &trans    &trans
+                &trans &kp END   &kp UP   &kp PG_DN &kp N4 &kp PSCRN                             &kp LBKT  &kp RBKT  &kp N8 &kp N9 &kp DQT &kp N0
+                &trans &kp LEFT  &kp DOWN &kp RIGHT &kp N8 &kp R                                 &kp MINUS &kp EQUAL &kp N4 &kp N5 &kp N6  &kp SQT
+                &trans &kp PG_UP &kp N0   &kp HOME  &kp N2 &lt FUN H &kp C_BRI_DEC &kp C_BRI_INC &kp BSLH  &kp GRAVE &kp N1 &kp N2 &kp N3  &trans
+                &trans &trans    &trans   &trans    &trans &trans    &trans        &trans        &kp SPACE &trans    &trans &trans &trans  &trans
             >;
         };
 
         function_layer {
             bindings = <
-                &trans &kp F1 &kp F2  &kp F3  &kp F4  &kp PSCRN                          &kp SLCK   &kp HOME   &kp PG_DN    &kp PG_UP    &kp END         &trans
-                &trans &kp F5 &kp F6  &kp F7  &kp F8  &kp INS                            &kp CLCK   &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT       &trans
-                &trans &kp F9 &kp F10 &kp F11 &kp F12 &kp K_APP  &bt BT_NXT   &soft_off  &kp KP_NUM &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP &kp PAUSE_BREAK &trans
-                &trans &trans &trans  &trans  &trans  &kp TAB    &bt BT_SEL 0 &bt BT_CLR &trans     &trans     &trans       &trans       &trans          &trans
+                &trans &kp F1 &kp F2  &kp F3  &kp F4  &kp PSCRN                          &trans &trans &trans &trans &trans &trans
+                &trans &kp F5 &kp F6  &kp F7  &kp F8  &kp INS                            &trans &trans &trans &trans &trans &trans
+                &trans &kp F9 &kp F10 &kp F11 &kp F12 &kp K_APP  &bt BT_NXT   &soft_off  &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans  &trans  &trans  &kp TAB    &bt BT_SEL 0 &bt BT_CLR &trans &trans &trans &trans &trans &trans
             >;
         };
     };
